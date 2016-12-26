@@ -486,3 +486,14 @@ function SetExecutiveComment(sender, ref) {
 		obj.Save();
 	}
 }
+
+function DoBackAndCleanWithQuestion(){
+	var event = Vars.getEvent();
+	var q1 = new Query("SELECT FilePath AS UIDPhoto From Document_Event_Foto WHERE Ref = @ref");
+	q1.AddParameter("ref", event);
+	var PhotoCount = q1.ExecuteCount();
+
+	 if (PhotoCount > 0){
+	  	Dialog.Ask(Translate["#PhotosWillNotBeSaved#"], DoBackAndClean, event);
+	 }
+}

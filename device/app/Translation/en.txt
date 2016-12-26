@@ -182,3 +182,4 @@ SucsessSend	Sent
 Refresh	Update
 Copy	Copy
 CantGetCoord	Unable to get the coordinates
+PhotosWillNotBeSaved	Photos will not be saved. Continue?

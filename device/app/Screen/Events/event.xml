@@ -3,7 +3,7 @@
 	<s:Push Id="event" Value="$GetEventDetails($event)"></s:Push>
   <c:DockLayout>
     <c:DockLayout CssClass="top_navigator">
-      <c:HorizontalLayout CssClass="btn_back" OnEvent="Back" OnClickAction="$DoBackAndClean()">
+      <c:HorizontalLayout CssClass="btn_back" OnEvent="Back" OnClickAction="$DoBackAndCleanWithQuestion()">
          <c:Image/>
         <c:TextView Text="#back#"/>
       </c:HorizontalLayout>

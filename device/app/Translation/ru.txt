@@ -182,3 +182,4 @@ SucsessSend	Отправлено
 Refresh	Обновить
 Copy	Скопировать
 CantGetCoord	Не удалось получить координаты
+PhotosWillNotBeSaved	Фотографии не будут сохранены. Продолжить?
