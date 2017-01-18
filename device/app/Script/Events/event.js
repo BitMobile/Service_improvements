@@ -495,5 +495,7 @@ function DoBackAndCleanWithQuestion(){
 
 	 if (PhotoCount > 0){
 	  	Dialog.Ask(Translate["#PhotosWillNotBeSaved#"], DoBackAndClean, event);
+	 } else {
+	 	Workflow.Back();
 	 }
 }
